@@ -12,14 +12,12 @@ export default function DonatePage() {
         strategy="lazyOnload"
       />
 
-      {/* Donorbox Embed iframe - TypeScript-safe */}
+      {/* Donorbox Embed iframe - Clean and TypeScript-safe */}
       <iframe
         src="https://donorbox.org/embed/likablelogic"
         title="Donate to LikableLogic"
         name="donorbox"
         allow="payment"
-        // Use data-* attribute to avoid TypeScript error while keeping functionality
-        data-allowpaymentrequest=""
         seamless
         frameBorder="0"
         scrolling="no"
