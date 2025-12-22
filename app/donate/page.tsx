@@ -12,7 +12,7 @@ export default function DonatePage() {
         strategy="lazyOnload"
       />
 
-      {/* Donorbox Embed iframe - No custom/deprecated attributes */}
+      {/* Donorbox Embed iframe - Clean, no deprecated attributes */}
       <iframe
         src="https://donorbox.org/embed/likablelogic"
         title="Donate to LikableLogic"
