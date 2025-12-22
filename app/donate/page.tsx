@@ -5,14 +5,12 @@ export default function DonatePage() {
     <div className="container mx-auto px-4 py-12">
       <h1 className="text-4xl font-bold text-center mb-8">Support LikableLogic.org</h1>
       
-      {/* Donorbox Script */}
       <Script
         id="donorbox-script"
         src="https://donorbox.org/widget.js"
         strategy="lazyOnload"
       />
 
-      {/* Donorbox Embed iframe - Clean, no deprecated attributes */}
       <iframe
         src="https://donorbox.org/embed/likablelogic"
         title="Donate to LikableLogic"
