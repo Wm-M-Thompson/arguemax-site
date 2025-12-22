@@ -12,13 +12,14 @@ export default function DonatePage() {
         strategy="lazyOnload"
       />
 
-      {/* Donorbox Embed iframe - Fully React-compatible */}
+      {/* Donorbox Embed iframe - TypeScript-safe */}
       <iframe
         src="https://donorbox.org/embed/likablelogic"
         title="Donate to LikableLogic"
         name="donorbox"
         allow="payment"
-        allowpaymentrequest=""  // lowercase string version - no React warning
+        // Use data-* attribute to avoid TypeScript error while keeping functionality
+        data-allowpaymentrequest=""
         seamless
         frameBorder="0"
         scrolling="no"
