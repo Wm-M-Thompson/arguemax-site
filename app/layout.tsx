@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import ClientNavbar from '@/components/ClientNavbar';  // Adjust to '../ClientNavbar' or '@/ClientNavbar' if needed
+import Navbar from '@/components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body  suppressHydrationWarning={true} className="bg-[#eaeef6] min-h-screen font-sans">
-        <ClientNavbar />
+        <Navbar />
         <main className="ml-32 p-8 flex flex-col items-center justify-center min-h-screen">
           {children}
         </main>

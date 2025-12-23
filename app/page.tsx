@@ -16,12 +16,14 @@ export default function Home() {
                 </p>
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
                   We foster respectful dialogue to build understanding to improve society. This was the goal behind the sale of playing cards successfully sold on Amazon to positive reviews. Links to these pages can be found{' '}
-                  <a href="#" className="underline hover:text-blue-600">
-                    here
-                  </a>{' '}
-                  and{' '}
-                  <a href="#" className="underline hover:text-blue-600">
-                    here
+                  <a href="https://www.amazon.com/People-Fight-Playing-Original-Version/dp/B08V57CZQS" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">
+                    here (Original Version)
+                  </a>,{' '}
+                  <a href="https://www.amazon.com/People-Fight-Playing-Cards-Version/dp/B09NHSM6D2" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">
+                    here (Plain Version)
+                  </a>, and{' '}
+                  <a href="https://www.amazon.com/People-Fight-Playing-Patriot-Version/dp/B09J48C77H" target="_blank" rel="noopener noreferrer" className="underline hover:text-blue-600">
+                    here (Patriot Version)
                   </a>.
                 </p>
                 <p className="text-lg md:text-xl text-gray-700 leading-relaxed">

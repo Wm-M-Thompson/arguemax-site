@@ -1,6 +1,6 @@
 'use client';
 
-import Navbar from '@/components/Navbar';  // Or '../components/Navbar' if relative
+import Navbar from './Navbar';  // Relative path from ClientNavbar to Navbar in the same folder
 
 export default function ClientNavbar() {
   return <Navbar />;

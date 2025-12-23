@@ -1,74 +1,58 @@
-import { HelpCircle, Mail, MessageCircle, Heart } from 'lucide-react';
+import Link from 'next/link';
 
 export default function HelpPage() {
   return (
-    <main className="min-h-screen bg-gray-50 pt-20">
-      <div className="max-w-4xl mx-auto px-6 py-12">
-        {/* Header */}
-        <div className="text-center mb-12">
-          <HelpCircle className="w-16 h-16 text-indigo-600 mx-auto mb-6" />
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">Help & Support</h1>
-          <p className="text-xl text-gray-600">
-            We're here to help you get the most out of LikableLogic.
-          </p>
-        </div>
-
-        {/* Support Options */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {/* Option 1 */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
-            <MessageCircle className="w-10 h-10 text-indigo-600 mb-4" />
-            <h2 className="text-2xl font-semibold text-gray-900 mb-3">Community Forum</h2>
-            <p className="text-gray-600 mb-4">
-              Ask questions, share tips, and connect with other learners. Our forum is beginner-friendly and moderated for kindness.
-            </p>
+    <div className="container mx-auto px-4 py-12 max-w-4xl">
+      <h1 className="text-4xl font-bold text-center mb-8">Help & Support</h1>
+      
+      <div className="prose prose-lg mx-auto text-gray-700 space-y-6">
+        <p>
+          Welcome to the LikableLogic.org Help page. We&apos;re here to assist you with any questions you may have about our mission, projects, donations, or the community forum.
+        </p>
+        
+        <h2 className="text-2xl font-semibold mt-8">Frequently Asked Questions</h2>
+        <ul className="list-disc pl-6 space-y-4">
+          <li>
+            <strong>What is LikableLogic.org?</strong><br />
+            We are a 501(c)(3) nonprofit dedicated to education and the open exchange of important information often overlooked in mainstream discourse.
+          </li>
+          <li>
+            <strong>How can I support your work?</strong><br />
+            You can make a tax-deductible donation on our <Link href="/donate" className="underline hover:text-blue-600">Donate page</Link>. Every contribution helps us continue our educational initiatives.
+          </li>
+          <li>
+            <strong>How do I join the community discussion?</strong><br />
+            Visit our forum at {' '}
             <a
-              href="/messages"
-              className="text-indigo-600 font-medium hover:text-indigo-700 inline-flex items-center"
+              href="https://forum.likablelogic.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-blue-600"
             >
-              Go to Forum → (Coming Soon)
-            </a>
-          </div>
-
-          {/* Option 2 */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 hover:shadow-xl transition">
-            <Mail className="w-10 h-10 text-indigo-600 mb-4" />
-            <h2 className="text-2xl font-semibold text-gray-900 mb-3">Email Us</h2>
-            <p className="text-gray-600 mb-4">
-              For direct help, suggestions, or partnership inquiries, reach out anytime.
-            </p>
-            <a
-              href="mailto:help@likablelogic.org"
-              className="text-indigo-600 font-medium hover:text-indigo-700"
-            >
-              help@likablelogic.org
-            </a>
-          </div>
-        </div>
-
-        {/* Quick Links */}
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-          <h2 className="text-2xl font-semibold text-gray-900 mb-6">Quick Links</h2>
-          <ul className="space-y-4 text-lg">
-            <li>
-              <a href="/" className="text-indigo-600 hover:underline">Home</a> – Back to the main page
-            </li>
-            <li>
-              <a href="/projects" className="text-indigo-600 hover:underline">Projects</a> – See what we're building
-            </li>
-            <li>
-              <a href="/donate" className="text-indigo-600 hover:underline">Donate</a> – Support our nonprofit mission
-            </li>
-          </ul>
-        </div>
-
-        {/* Footer Note */}
-        <div className="text-center mt-12 text-gray-600">
-          <p className="flex items-center justify-center">
-            Made with <Heart className="w-5 h-5 text-red-500 mx-1" /> for learners everywhere.
-          </p>
+              forum.likablelogic.org
+            </a>{' '}
+            to participate in conversations about our current and future projects.
+          </li>
+          <li>
+            <strong>Is my donation tax-deductible?</strong><br />
+            Yes! LikableLogic.org is a registered 501(c)(3) nonprofit. Our EIN is 46-5434782.
+          </li>
+        </ul>
+        
+        <h2 className="text-2xl font-semibold mt-8">Contact Us</h2>
+        <p>
+          For additional support or inquiries, please join our community forum or use the Donate page contact options. We&apos;re always happy to hear from supporters and participants.
+        </p>
+        
+        <div className="text-center mt-12">
+          <Link
+            href="/"
+            className="inline-flex items-center justify-center rounded-md bg-red-600 px-8 py-4 text-lg font-semibold text-white hover:bg-red-700 transition-all duration-200"
+          >
+            Return to Home
+          </Link>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
