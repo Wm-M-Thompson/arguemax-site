@@ -3,7 +3,7 @@ import Script from 'next/script';
 export default function DonatePage() {
   return (
     <div className="container mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-center mb-8">Support LikableLogic.org</h1>
+      <h1 className="text-4xl font-bold text-center mb-8">Support ArgueMax.com</h1>
       
       <Script
         id="donorbox-script"
@@ -12,8 +12,8 @@ export default function DonatePage() {
       />
 
       <iframe
-        src="https://donorbox.org/embed/likablelogic"
-        title="Donate to LikableLogic"
+        src="https://donorbox.org/embed/arguemax"
+        title="Donate to ArgueMax"
         name="donorbox"
         allow="payment"
         seamless

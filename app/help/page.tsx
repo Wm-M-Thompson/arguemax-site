@@ -7,13 +7,13 @@ export default function HelpPage() {
       
       <div className="prose prose-lg mx-auto text-gray-700 space-y-6">
         <p>
-          Welcome to the LikableLogic.org Help page. We&apos;re here to assist you with any questions you may have about our mission, projects, donations, or the community forum.
+          Welcome to the ArgueMax.com Help page. We&apos;re here to assist you with any questions you may have about our mission, projects, donations, or the community forum.
         </p>
         
         <h2 className="text-2xl font-semibold mt-8">Frequently Asked Questions</h2>
         <ul className="list-disc pl-6 space-y-4">
           <li>
-            <strong>What is LikableLogic.org?</strong><br />
+            <strong>What is ArgueMax.com?</strong><br />
             We are a 501(c)(3) nonprofit dedicated to education and the open exchange of important information often overlooked in mainstream discourse.
           </li>
           <li>
@@ -24,18 +24,18 @@ export default function HelpPage() {
             <strong>How do I join the community discussion?</strong><br />
             Visit our forum at {' '}
             <a
-              href="https://forum.likablelogic.org"
+              href="https://forum.arguemax.com"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-blue-600"
             >
-              forum.likablelogic.org
+              forum.arguemax.com
             </a>{' '}
             to participate in conversations about our current and future projects.
           </li>
           <li>
             <strong>Is my donation tax-deductible?</strong><br />
-            Yes! LikableLogic.org is a registered 501(c)(3) nonprofit. Our EIN is 46-5434782.
+            Yes! ArgueMax.com is a registered 501(c)(3) nonprofit. Our EIN is 46-5434782.
           </li>
         </ul>
         
