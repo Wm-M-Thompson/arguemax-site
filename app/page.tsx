@@ -36,7 +36,7 @@ export default function Home() {
                     alt="ArgueMax.com Logo"
                     fill
                     className="object-contain drop-shadow-lg"
-                    priority // Loads early since it's above the fold
+                    priority
                   />
                 </div>
 
