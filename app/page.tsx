@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import useEmblaCarousel from 'embla-carousel-react';
 import { useCallback } from 'react';
@@ -28,9 +29,15 @@ export default function Home() {
           <div className="container px-4 md:px-6 mx-auto">
             <div className="flex flex-col items-center space-y-8 text-center max-w-4xl mx-auto">
               <div className="space-y-6">
-                {/* Square Logo Placeholder */}
-                <div className="w-48 h-48 bg-gray-300 border-2 border-dashed rounded-xl mx-auto flex items-center justify-center text-gray-500 font-medium">
-                  Logo Here
+                {/* Logo */}
+                <div className="relative w-48 h-48 md:w-64 md:h-64 mx-auto">
+                  <Image
+                    src="/image/logo.png"
+                    alt="ArgueMax.com Logo"
+                    fill
+                    className="object-contain drop-shadow-lg"
+                    priority // Loads early since it's above the fold
+                  />
                 </div>
 
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-900">
@@ -118,8 +125,6 @@ export default function Home() {
 
                 {/* Subtle Future Initiatives Section */}
                 <div className="text-base text-gray-600 mt-16 opacity-80 max-w-3xl leading-relaxed space-y-6 border-t pt-8">
-                  
-
                   <p>
                     We invite you to join us:{' '}
                     <a
