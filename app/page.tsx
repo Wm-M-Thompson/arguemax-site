@@ -43,13 +43,7 @@ export default function Home() {
                 <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-gray-900">
                   ArgueMax.com
                 </h1>
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  ArgueMax.com is a 501(c)(3) nonprofit dedicated to education and the open exchange of important information often overlooked in mainstream discourse.
-                </p>
 
-                <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
-                  We are currently seeking donations to promote and support this venture. All donations are tax deductible.
-                </p>
 
                 {/* Carousel */}
                 <div className="relative max-w-5xl mx-auto mt-12">
